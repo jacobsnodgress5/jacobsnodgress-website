@@ -1,0 +1,191 @@
+/*p, ul, li, h1, h2, h3, h4 {
+    margin-left: 220px;  /* Account for the sidebar width */
+   
+
+body, html{
+  margin: 300px;
+  padding: 0;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 475px;
+    width: 400px;;
+    border: 2px solid #437c65;
+    text-align: center;
+    background-image: url("images/bg.JPG");
+    background-size: cover;
+}
+
+#headshot {
+    position: absolute;
+    left: 75px;
+    top: 135px;
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;   /* this makes it a circle */
+    object-fit: cover;
+    border: 10px solid black;
+}
+/*
+
+
+#fullname {
+    position: fixed;
+    left: 75px;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    text-align: center;
+}
+
+#shortdetail{
+    position: fixed;
+    left: 50px;
+    top: 52px;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+}*/
+
+/*#upperleft {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 400px;
+    height: 120px;
+    background: forestgreen; 
+    z-index: -1;
+}*/
+
+#yosemite {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 400px;
+    bottom: 0;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.8; /* Make the background image semi-transparent */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#yosemite img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+#navbar {
+    position: fixed; /*absolute can scroll, fixed cant*/
+    left: 400px;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border: 2px solid #437c65;
+    background: #e6a03778;
+    text-align: right;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.cushion {
+    margin-right: 100px; /* Add some space to the right */
+}
+
+.box1 {
+    position: absolute; /*absolute can scroll, fixed cant*/
+    left: 400px;
+    right: 0;
+    top: 103px;
+    margin: 0;
+    padding: 0;
+    height: 275px;
+    width: 590px;
+    border: 2px solid #437c65;
+    text-align: center;
+    background-color: #51957a8e;
+    opacity: 1;
+}
+
+#pushdown1 {
+    padding-top: 30px;
+    opacity: 1;
+}
+
+#pushdown2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    opacity: 1;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: black;
+    padding: 5px;
+}
+
+.box2{
+    position: absolute;
+    padding-top: 10px;
+    right: 0;
+    top: 103px;
+    height: 230px;
+    width: 525px;
+    border: 2px solid #437c65;
+    text-align: center;
+    background-image: url("images/bg3.JPG");
+    background-size: cover;
+
+}
+
+.box3{
+    position: absolute;
+    right: 0;
+    top: 343px;
+    height: 400px;
+    width: 505px;
+    border: 2px solid #437c65;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: #51957a8e;
+}
+.box4 {
+    position: absolute;
+    padding-top: 20px;
+    right: 527px;
+    top: 378px;
+    height: 365px;
+    width: 590px;
+    border: 2px solid #437c65;
+    text-align: center;
+    background-color: #e6a03778;
+    background-size: cover;
+}
+
+.contact {
+    position: absolute;
+    padding-top: 5px;
+    left: 0;
+    top: 475px;
+    height: 213px;
+    width: 400px;
+    border: 2px solid #437c65;
+    text-align: center;
+    background-color: #51957a8e;
+}
