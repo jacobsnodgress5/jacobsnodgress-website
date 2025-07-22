@@ -150,7 +150,7 @@
     width: 1460px;
     height: 720px;
     z-index: -3;  /* this puts it behind the headshot */
-    background-image: url("images/bg4.png");
+    background-image: url("bg4.png");
     
 }
 
