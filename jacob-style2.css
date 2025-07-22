@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.active-link {
+  color: gray;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
 #background {
     position: absolute;
     left: 60px;
@@ -19,6 +30,12 @@
     border-radius: 20%;
     object-fit: cover;
 }
+
+#linkedin:hover{
+    opacity: 0.75;
+    width: 80px;
+    height: 80px;
+}
 #instagram {
     position: absolute;
     left: 170px;
@@ -30,6 +47,13 @@
     object-fit: cover;
 }
 
+#instagram:hover{
+    opacity: 0.75;
+    width: 80px;
+    height: 80px;
+    
+}
+
 #facebook {
     position: absolute;
     left: 170px;
@@ -39,6 +63,13 @@
     height: 70px;
     border-radius: 30%;
     object-fit: cover;
+}
+
+#facebook:hover{
+    opacity: 0.75;
+    width: 80px;
+    height: 80px;
+    
 }
 
 .box1 {
@@ -72,7 +103,15 @@
     text-align: center;
     margin-left: 35px;
     margin-right: 35px;
-}   
+    margin-top: 20px;
+}  
+
+#color1{
+    margin-left: 90px;
+    width: 120px;
+    height: 3px;
+    background-color: green;
+}
 
 .paragraph {
     position: absolute;
@@ -113,6 +152,11 @@
     margin-left: 85px;
 }
 
+#resume:hover {
+  background-color: blue;
+  outline: blue;
+}
+
 #contact {
     position: absolute;
     left: 215px;
@@ -133,6 +177,12 @@
     outline: 3px solid black;
 }
 
+#contact:hover {
+  color: white;
+  outline: 3px solid blue;
+  background: blue;
+}
+
 #description {
     text-align: center;
     font-size: 15px;
@@ -150,7 +200,7 @@
     width: 1460px;
     height: 720px;
     z-index: -3;  /* this puts it behind the headshot */
-    background-image: url("bg4.png");
+    background-image: url("images/bg4.png");
     
 }
 
@@ -165,6 +215,26 @@
     text-align: right;
     font-size: 20px;
     z-index: 1;
+}
+
+#resume1:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+#about:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#projects:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#contact1:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 #topleft {
