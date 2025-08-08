@@ -23,10 +23,11 @@ body {
 
 /* Header text */
 #info {
+  position: relative;
   font-size: 28px;
   margin-bottom: 20px;
   left: 400px;
-  top:100px;
+  top: 100px;
 }
 
 /* Footer styling */
