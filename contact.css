@@ -1,8 +1,8 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
   background-color: #f5f0e6; /* light neutral tan */
-  font-family: Arial, sans-serif;
+ /* font-family: Arial, sans-serif;
   color: #333;
 }
 
@@ -11,10 +11,50 @@ body {
   margin: 80px auto;
   padding: 40px;
   background-color: #fff; /* optional white box */
-  border-radius: 8px;
+ /* border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #info {
   font-size: 28px;
   margin-bottom: 20px;
+}*/
+
+/* Entire page layout */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* make body fill at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f0e6; /* light neutral tan */
+  font-family: Arial, sans-serif;
+  color: #333;
 }
+
+/* Box containing your main content */
+.infos {
+  max-width: 600px;
+  margin: 80px auto 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* centers the header inside this box */
+}
+
+/* Header text */
+#info {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto; /* pushes footer to bottom of page */
+  text-align: center;
+  padding: 20px;
+  background-color: #e0d6c3;
+  font-size: 14px;
+  color: #555;
+}
+
