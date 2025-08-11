@@ -15,6 +15,10 @@ document.getElementById("contact1").addEventListener("click", function () {
     window.location.href = "contact.html";
 });
 
+document.getElementById("projects").addEventListener("click", function () {
+    window.location.href = "projects.html";
+});
+
 document.getElementById("resume").addEventListener("click", function () {
     window.location.href = "https://docs.google.com/document/d/1J_wiQaTEke6nAC6R2e3yH7_R6Q6BdChsFtUPoPUbS84/edit?tab=t.0";
 });
