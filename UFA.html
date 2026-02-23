@@ -12,6 +12,60 @@
     </header>
 
     <main class="project-container">
+        <div class="project-content">
+    
+            <section class="project-intro">
+                <h2>The Intersection of Sport and Science</h2>
+                <p> This project began at the intersection of my life as an ultimate frisbee player and my academic path as an aspiring data scientist at <strong>UCLA</strong>. 
+                I’ve always been fascinated by the nuances of the game—the spatial dynamics of disc flight and the tactical decisions that increase the likelihood of winning. 
+                As an Applied Mathematics student, I realized that the eye test often doesn’t relay everything the data does. 
+                This project was born from a desire to bridge that gap, taking the untapped potential of professional <strong>Ultimate Frisbee Association (UFA)</strong> statistics and applying the same analytical standards and methods seen in sports like basketball or baseball.
+                </p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="technical-core">
+                <h2>The Technical Core</h2>
+                <p>
+            The technical core of this project involved building a robust data pipeline capable of handling the UFA’s API data across the 2022–2025 seasons. 
+            The way the UFA API provides its data is directly from both teams in a single game. This causes a need for extra care, as each side records the stats more useful for itself, and not for the other team. 
+                </p>
+                <p>
+            For example, while on defense, that team's stat taker will not record the passes made by the other team. In order to bring the data together into a functional game state dataframe for each game analyzed, I had to construct a pipeline that merged the away and home dataframes, eliminating duplicate events accurately in order to preserve data integrity. 
+                </p>
+                <blockquote>
+            Additionally, by augmenting the provided stats, I engineered specific spatial and temporal features to capture the "flow" of a game, including vertical and horizontal yardage for every throw.
+                </blockquote>
+                <p>
+            This pipeline transformed thousands of individual events into a clean, game-flow-centric dataset, providing a granular look at how discs move across the field.
+                </p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="visual-insights">
+                <h2>From Raw Data to Visual Insights</h2>
+                <p>
+            Once the data was refined, I transitioned the "Master Stats" output into <strong>Tableau</strong> to bring these metrics to life. 
+            The goal was to create a dashboard that wasn't just a collection of charts, but a tool to provide tactical insights for coaches and fans alike. 
+            Key visualizations include:
+                </p>
+                <ul class="insight-list">
+                    <li><strong>Spatial Heatmaps:</strong> Mapping completion percentages across different zones of the field to identify high-risk areas.</li>
+                    <li><strong>Game Pace Plots:</strong> Plotting offensive efficiency vs pass per point to see the correlation between pace and scoring.</li>
+                    <li><strong>Dimensional Risk Analysis:</strong> Charting scoring percentage and completion percentage versus field location to further understand risk areas.</li>
+                </ul>
+            </section>
+
+            <footer class="project-footer">
+                <p>
+            This presentation serves as the destination of that work—a synthesis of analysis and a love for the sport, packaged into an interactive experience that makes ultimate analytics readily accessible. 
+            Finally, this project is <strong>in progress</strong>. I am looking forward to improving my pipeline and applying machine learning models to continue to advance the analysis done here.
+                </p>
+            </footer>
+
+</div>
         <section class="write-up">
             <h3>Key Insights</h3>
             <p>Through feature engineering of vertical yards and stall proxies, I identified several competitive advantages...</p>
