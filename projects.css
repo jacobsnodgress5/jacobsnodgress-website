@@ -50,6 +50,11 @@
     background-size: cover;
 }
 
+#other-content:hover {
+    opacity: 0.7;
+    color: blue;
+}
+
 html {
     background-color: rgb(242, 212, 173);
     margin: 0;
