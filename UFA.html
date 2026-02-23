@@ -34,8 +34,7 @@
                 <p>
             For example, while on defense, that team's stat taker will not record the passes made by the other team. In order to bring the data together into a functional game state dataframe for each game analyzed, I had to construct a pipeline that merged the away and home dataframes, eliminating duplicate events accurately in order to preserve data integrity. 
                 </p>
-                <blockquote>
-            Additionally, by augmenting the provided stats, I engineered specific spatial and temporal features to capture the "flow" of a game, including vertical and horizontal yardage for every throw.
+                <blockquote>Additionally, by augmenting the provided stats, I engineered specific spatial and temporal features to capture the "flow" of a game, including vertical and horizontal yardage for every throw.
                 </blockquote>
                 <p>
             This pipeline transformed thousands of individual events into a clean, game-flow-centric dataset, providing a granular look at how discs move across the field.
@@ -66,13 +65,40 @@
             </footer>
 
 </div>
-        <section class="write-up">
-            <h3>Key Insights</h3>
-            <p>Through feature engineering of vertical yards and stall proxies, I identified several competitive advantages...</p>
-            <ul>
-                <li><strong>Gunslinger vs. Valve:</strong> A scatter plot analysis of risk vs. execution.</li>
-                <li><strong>The Danger Zone:</strong> A spatial heatmap of completion rates across the field.</li>
-            </ul>
+        <section class="dashboard-takeaways">
+            <h2>Actionable Insights & Tactical Takeaways</h2>
+            <p>
+        Analyzing the aggregated 2022–2025 game states revealed several core inefficiencies and strategic imperatives for UFA teams. 
+        The dashboard highlights three primary tactical takeaways:
+            </p>
+
+            <div class="takeaway-card">
+                <h3>1. The Sweet Spot of Offensive Pace</h3>
+                <p>
+            Data indicates that peak offensive efficiency occurs between <strong>5 and 10 passes per possession</strong>. 
+            This exposes the statistical inefficiency of both extremes: an over-reliance on immediate deep shots and prolonged "small ball" possessions. 
+            The numbers dictate that a well-rounded offense—capable of executing high-value, effective throws without allowing the possession to stagnate—is vital for consistent scoring.
+                </p>
+            </div>
+
+            <div class="takeaway-card">
+                <h3>2. Spatial Risk and the Sideline Penalty</h3>
+                <p>
+            Spatial analysis reveals a sharp decline in completion percentage when throws originate from the sidelines. 
+            The completion map and field-width plots strongly support a tactical shift: when the disc is trapped on the boundary, teams should prioritize immediate centering passes rather than forcing vertical progression down the line. 
+            Interestingly, a marginal uptick in completion rates at the absolute boundary suggests players intuitively adopt a highly risk-averse, possession-preservation mindset when they recognize this spatial trap.
+                </p>
+            </div>
+
+            <div class="takeaway-card">
+                <h3>3. Redzone Volatility and Break Conversions</h3>
+                <p>
+            Execution within both the offensive and defensive redzones disproportionately impacts game outcomes. 
+            The huck completion map demonstrates a significant drop in deep-shot success when originating near either endzone. 
+            Furthermore, the break conversion data shows that turnovers deep in either territory yield the highest probability of breaks. 
+            Consequently, a defining separator for elite teams is their statistical dominance and discipline in these high-pressure, high-leverage field positions.
+                </p>
+            </div>
         </section>
 
         <section class="dashboard">
