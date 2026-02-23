@@ -44,4 +44,16 @@ blockquote {
     margin: 40px 0;
 }
 
+.takeaway-card {
+    background-color: #fcfcfc;
+    border-left: 4px solid brown;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
 
+.takeaway-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
