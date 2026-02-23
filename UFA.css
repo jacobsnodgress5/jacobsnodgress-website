@@ -137,3 +137,25 @@ blockquote {
     text-align: center;
     margin-top: 40px;
 }
+
+/* --- Hero Image --- */
+.hero-image-container {
+    width: 100%;
+    margin: 20px 0 40px 0; /* Adds breathing room below the header and above the text */
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%; /* Ensures it fills the 800px container perfectly */
+    height: auto; /* Keeps the aspect ratio from stretching */
+    border-radius: 8px; /* Matches the rounded corners of your dashboard window */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle depth */
+    border: 2px solid brown; /* Ties into your existing color theme */
+}
+
+.image-caption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
