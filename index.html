@@ -1,69 +1,55 @@
 <!DOCTYPE html>
-
-<html lang ="en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="jacob-style2.css"> 
-    <script src="links.js" defer></script>
-    <title>Jacob Snodgress</title>
+    <title>Jacob Snodgress | Portfolio</title>
 </head>
-
-<!--the idea is to create a catchy really good looking brief home page, then more details one other pages-->
-
 <body> 
-    <header class ="title">  
-        <p id = "topleft"><span>Jacob Snodgress</span><span> || Math and Data Science Student</span></p>
-        <br>
+    <header>  
+        <div id="topleft">
+            <strong>Jacob Snodgress</strong> || Math and Data Science Student
+        </div>
+        <nav id="navbar">
+            <a href="#about" id="about">About Me</a>
+            <a href="#resume1" id="resume1">Resume</a>
+            <a href="#projects" id="projects">Projects</a>
+            <a href="#contact1" id="contact1">Contact</a>
+        </nav>
     </header>
    
-    <main>
-        <section id = "navbar">
-            <p class = "cush"><span id ="about">About Me</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id = "resume1">Resume</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id = "projects">Projects</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id = "contact1">Contact</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-        </section>
-
-        <!--list of things to next:
-            --set up github projects, including math 156 project, compile research project,any others I can find
-            --style contacts page-->
+    <main class="hero-container">
         
-        <p id = "background"></p>
-        <p id = "background2"></p>
-        <p id = "back3"></p>
-        <p id = "color2"></p>
-        <p id = "color3"></p>
-        <div class = "paragraph">
-            <p id= "welcome"><b>WELCOME</b></p>
-            <p id= "build">Let's Build Something Great</p>
-            <p id= "resume"> RESUME</p>
-            <p id= "contact"> CONTACT</p>
-            <p id = "description">I am UCLA Applied Mathematics and Data Science student. I have several programming skills and having been gaining experience in data-driven research for nearly a year. I have found that my passion is at the intersection of both what I study, math and computing, and solving problems that make a positive difference in the world</p>
-        </div>
-        <!--<p id = linkedin></p>-->
-        <img src="linkedin.png" id = "linkedin" alt="in">
-        <img src="instagram.png" id = "instagram" alt="in">
-        <img src="facebook.png" id = "facebook" alt="in">
+        <section class="hero-left">
+            <div class="social-links">
+                <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+                <img src="instagram.png" id="instagram" alt="Instagram">
+                <img src="facebook.png" id="facebook" alt="Facebook">
+            </div>
 
-        <section class ="box1">
-            <img src="headshot.png" id = "headshot" class = "leftmargin" alt="Jacob Snodgress" width="500"> 
-            <h2 id = "pushdown1">Jacob Snodgress</h2>
-            <p id = "color1"></p>
-            <p id = "pushdown2">UCLA Applied Mathematics / Data Science Engineering</p>
-            <!--<p>I have strong programming skills and experience in data-driven research. Proficient in Python, C++, Javascript, PHP and more. I possess research experience applying math and computing skills to atmospheric modeling. Eager to apply analytical and computational expertise to real-world challenges.</p>
-        -->
+            <div id="background"></div> <div class="box1">
+                <img src="headshot.png" id="headshot" alt="Jacob Snodgress"> 
+                <h2>Jacob Snodgress</h2>
+                <div id="color1"></div> <p id="major">UCLA Applied Mathematics / Data Science Engineering</p>
+            </div>
         </section>
-        <br>
-        <section>
-            <div id = "upperleft">
-                <p></p>
-             </div>
-        </section>
-        <br>
 
-        
-    
+        <section class="hero-right">
+            <h1 id="welcome">WELCOME</h1>
+            <h3 id="build">Let's Build Something Great</h3>
+            
+            <div class="button-group">
+                <a href="#" id="resume">RESUME</a>
+                <a href="#" id="contact">CONTACT</a>
+            </div>
+            
+            <p id="description">I am a UCLA Applied Mathematics and Data Science student. I have strong programming skills and have been gaining experience in data-driven research for nearly a year. I have found that my passion is at the intersection of both what I study, math and computing, and solving problems that make a positive difference in the world.</p>
+        </section>
+
     </main>
 
     <footer>
-        <p id = "footer">&copy; Jacob Snodgress 2025</p>
+        <p id="footer">&copy; Jacob Snodgress 2025</p>
     </footer>
 </body>
 </html>
