@@ -193,16 +193,16 @@ html {
     
 }
 
-#back3 {
-    position: absolute;
+/*#back3 {
+  // position: absolute;
     bottom: -20px;
     right: 0px;
     width: 1460px;
     height: 720px;
-    z-index: -3;  /* this puts it behind the headshot */
+    z-index: -3;  /* this puts it behind the headshot 
     background-image: url("bg4.png");
     
-}
+}*/
 
 #navbar {
     position: absolute; /*absolute can scroll, fixed cant*/
