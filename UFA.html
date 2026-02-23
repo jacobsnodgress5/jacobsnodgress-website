@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>UFA Data Project | Jacob Snodgress</title>
-    <link rel="stylesheet" href="UFA.css"> </head>
+    <link rel="stylesheet" href="UFA.css"> 
+</head>
 <body>
 
     <header class="project-header">
@@ -12,115 +13,82 @@
     </header>
 
     <main class="project-container">
-        <div class="project-content">
-    
-            <section class="project-intro">
-                <h2>The Intersection of Sport and Science</h2>
-                <p> This project began at the intersection of my life as an ultimate frisbee player and my academic path as an aspiring data scientist at <strong>UCLA</strong>. 
-                I’ve always been fascinated by the nuances of the game—the spatial dynamics of disc flight and the tactical decisions that increase the likelihood of winning. 
-                As an Applied Mathematics student, I realized that the eye test often doesn’t relay everything the data does. 
-                This project was born from a desire to bridge that gap, taking the untapped potential of professional <strong>Ultimate Frisbee Association (UFA)</strong> statistics and applying the same analytical standards and methods seen in sports like basketball or baseball.
-                </p>
-            </section>
+        
+        <section class="project-intro">
+            <h2>The Intersection of Sport and Science</h2>
+            <p>This project began at the intersection of my life as an ultimate frisbee player and my academic path as an aspiring data scientist at <strong>UCLA</strong>. I’ve always been fascinated by the nuances of the game—the spatial dynamics of disc flight and the tactical decisions that increase the likelihood of winning. As an Applied Mathematics student, I realized that the eye test often doesn’t relay everything the data does. This project was born from a desire to bridge that gap, taking the untapped potential of professional <strong>Ultimate Frisbee Association (UFA)</strong> statistics and applying the same analytical standards and methods seen in sports like basketball or baseball.</p>
+        </section>
 
-            <hr class="section-divider">
+        <hr class="section-divider">
 
-            <section class="technical-core">
-                <h2>The Technical Core</h2>
-                <p>
-            The technical core of this project involved building a robust data pipeline capable of handling the UFA’s API data across the 2022–2025 seasons. 
-            The way the UFA API provides its data is directly from both teams in a single game. This causes a need for extra care, as each side records the stats more useful for itself, and not for the other team. 
-                </p>
-                <p>
-            For example, while on defense, that team's stat taker will not record the passes made by the other team. In order to bring the data together into a functional game state dataframe for each game analyzed, I had to construct a pipeline that merged the away and home dataframes, eliminating duplicate events accurately in order to preserve data integrity. 
-                </p>
-                <blockquote>Additionally, by augmenting the provided stats, I engineered specific spatial and temporal features to capture the "flow" of a game, including vertical and horizontal yardage for every throw.
-                </blockquote>
-                <p>
-            This pipeline transformed thousands of individual events into a clean, game-flow-centric dataset, providing a granular look at how discs move across the field.
-                </p>
-            </section>
+        <section class="technical-core">
+            <h2>The Technical Core</h2>
+            <p>The technical core of this project involved building a robust data pipeline capable of handling the UFA’s API data across the 2022–2025 seasons. The way the UFA API provides its data is directly from both teams in a single game. This causes a need for extra care, as each side records the stats more useful for itself, and not for the other team.</p>
+            <p>For example, while on defense, that team's stat taker will not record the passes made by the other team. In order to bring the data together into a functional game state dataframe for each game analyzed, I had to construct a pipeline that merged the away and home dataframes, eliminating duplicate events accurately in order to preserve data integrity.</p>
+            <blockquote>Additionally, by augmenting the provided stats, I engineered specific spatial and temporal features to capture the "flow" of a game, including vertical and horizontal yardage for every throw.</blockquote>
+            <p>This pipeline transformed thousands of individual events into a clean, game-flow-centric dataset, providing a granular look at how discs move across the field.</p>
+        </section>
 
-            <hr class="section-divider">
+        <hr class="section-divider">
 
-            <section class="visual-insights">
-                <h2>From Raw Data to Visual Insights</h2>
-                <p>
-            Once the data was refined, I transitioned the "Master Stats" output into <strong>Tableau</strong> to bring these metrics to life. 
-            The goal was to create a dashboard that wasn't just a collection of charts, but a tool to provide tactical insights for coaches and fans alike. 
-            Key visualizations include:
-                </p>
-                <ul class="insight-list">
-                    <li><strong>Spatial Heatmaps:</strong> Mapping completion percentages across different zones of the field to identify high-risk areas.</li>
-                    <li><strong>Game Pace Plots:</strong> Plotting offensive efficiency vs pass per point to see the correlation between pace and scoring.</li>
-                    <li><strong>Dimensional Risk Analysis:</strong> Charting scoring percentage and completion percentage versus field location to further understand risk areas.</li>
-                </ul>
-            </section>
+        <section class="visual-insights">
+            <h2>From Raw Data to Visual Insights</h2>
+            <p>Once the data was refined, I transitioned the "Master Stats" output into <strong>Tableau</strong> to bring these metrics to life. The goal was to create a dashboard that wasn't just a collection of charts, but a tool to provide tactical insights for coaches and fans alike. Key visualizations include:</p>
+            <ul class="insight-list">
+                <li><strong>Spatial Heatmaps:</strong> Mapping completion percentages across different zones of the field to identify high-risk areas.</li>
+                <li><strong>Game Pace Plots:</strong> Plotting offensive efficiency vs pass per point to see the correlation between pace and scoring.</li>
+                <li><strong>Dimensional Risk Analysis:</strong> Charting scoring percentage and completion percentage versus field location to further understand risk areas.</li>
+            </ul>
+        </section>
 
-            <footer class="project-footer">
-                <p>
-            This presentation serves as the destination of that work—a synthesis of analysis and a love for the sport, packaged into an interactive experience that makes ultimate analytics readily accessible. 
-            Finally, this project is <strong>in progress</strong>. I am looking forward to improving my pipeline and applying machine learning models to continue to advance the analysis done here.
-                </p>
-            </footer>
+        <hr class="section-divider">
 
-</div>
         <section class="dashboard-takeaways">
             <h2>Actionable Insights & Tactical Takeaways</h2>
-            <p>
-        Analyzing the aggregated 2022–2025 game states revealed several core inefficiencies and strategic imperatives for UFA teams. 
-        The dashboard highlights three primary tactical takeaways:
-            </p>
+            <p>Analyzing the aggregated 2022–2025 game states revealed several core inefficiencies and strategic imperatives for UFA teams. The dashboard highlights three primary tactical takeaways:</p>
 
             <div class="takeaway-card">
                 <h3>1. The Sweet Spot of Offensive Pace</h3>
-                <p>
-            Data indicates that peak offensive efficiency occurs between <strong>5 and 10 passes per possession</strong>. 
-            This exposes the statistical inefficiency of both extremes: an over-reliance on immediate deep shots and prolonged "small ball" possessions. 
-            The numbers dictate that a well-rounded offense—capable of executing high-value, effective throws without allowing the possession to stagnate—is vital for consistent scoring.
-                </p>
+                <p>Data indicates that peak offensive efficiency occurs between <strong>5 and 10 passes per possession</strong>. This exposes the statistical inefficiency of both extremes: an over-reliance on immediate deep shots and prolonged "small ball" possessions. The numbers dictate that a well-rounded offense—capable of executing high-value, effective throws without allowing the possession to stagnate—is vital for consistent scoring.</p>
             </div>
 
             <div class="takeaway-card">
                 <h3>2. Spatial Risk and the Sideline Penalty</h3>
-                <p>
-            Spatial analysis reveals a sharp decline in completion percentage when throws originate from the sidelines. 
-            The completion map and field-width plots strongly support a tactical shift: when the disc is trapped on the boundary, teams should prioritize immediate centering passes rather than forcing vertical progression down the line. 
-            Interestingly, a marginal uptick in completion rates at the absolute boundary suggests players intuitively adopt a highly risk-averse, possession-preservation mindset when they recognize this spatial trap.
-                </p>
+                <p>Spatial analysis reveals a sharp decline in completion percentage when throws originate from the sidelines. The completion map and field-width plots strongly support a tactical shift: when the disc is trapped on the boundary, teams should prioritize immediate centering passes rather than forcing vertical progression down the line. Interestingly, a marginal uptick in completion rates at the absolute boundary suggests players intuitively adopt a highly risk-averse, possession-preservation mindset when they recognize this spatial trap.</p>
             </div>
 
             <div class="takeaway-card">
                 <h3>3. Redzone Volatility and Break Conversions</h3>
-                <p>
-            Execution within both the offensive and defensive redzones disproportionately impacts game outcomes. 
-            The huck completion map demonstrates a significant drop in deep-shot success when originating near either endzone. 
-            Furthermore, the break conversion data shows that turnovers deep in either territory yield the highest probability of breaks. 
-            Consequently, a defining separator for elite teams is their statistical dominance and discipline in these high-pressure, high-leverage field positions.
-                </p>
+                <p>Execution within both the offensive and defensive redzones disproportionately impacts game outcomes. The huck completion map demonstrates a significant drop in deep-shot success when originating near either endzone. Furthermore, the break conversion data shows that turnovers deep in either territory yield the highest probability of breaks. Consequently, a defining separator for elite teams is their statistical dominance and discipline in these high-pressure, high-leverage field positions.</p>
             </div>
         </section>
+
+        <hr class="section-divider">
 
         <section class="dashboard">
             <h2>Interactive Dashboard</h2>
             <p>Click the window below to explore the full interactive Tableau dashboard.</p>
 
-            <a href="https://public.tableau.com/app/profile/jacob.snodgress/viz/UFASpatialStatisticsDashboard/UFADashboard1?publish=yes" target="_blank" class="dashboard">
-        
+            <a href="https://public.tableau.com/app/profile/jacob.snodgress/viz/UFASpatialStatisticsDashboard/UFADashboard1?publish=yes" target="_blank" class="dashboard-window-link">
                 <div class="dashboard-window">
                     <img src="UFA_dashboard2.png" alt="Preview of UFA Analytics Dashboard" class="dashboard-image">
-            
                     <div class="window-overlay">
                         <span class="overlay-text">Click to Launch Interactive View ↗</span>
                     </div>
                 </div>
-
             </a>
         </section>
+
+        <hr class="section-divider">
 
         <section class="code-links">
             <a href="https://github.com/your-username/ufa-project" class="btn">View Jupyter Notebook on GitHub</a>
         </section>
+
+        <footer class="project-footer">
+            <p>This presentation serves as the destination of that work—a synthesis of analysis and a love for the sport, packaged into an interactive experience that makes ultimate analytics readily accessible. Finally, this project is <strong>in progress</strong>. I am looking forward to improving my pipeline and applying machine learning models to continue to advance the analysis done here.</p>
+        </footer>
+
     </main>
 
 </body>
