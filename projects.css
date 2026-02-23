@@ -36,6 +36,7 @@
 }
 
 #other-content {
+    display: flex;
     flex: 1;                /* takes remaining space on the right */
     justify-content: center;
     align-items: center;
