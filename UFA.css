@@ -1,25 +1,35 @@
+/* --- Global Container --- */
+/* This ensures everything on the page shares the exact same width and alignment */
+.project-header,
+.project-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Prevents text from touching the screen edges on mobile */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
 .project-header {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.project-header h1 {
     font-family: 'Georgia', serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: brown;
+    margin-bottom: 10px;
 }
 
-.project-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #333;
-}
-
-.project-content h2 {
-    color: brown; /* Matching your border theme */
+/* --- Typography & Headings --- */
+/* Applies the brown underline to ALL section headers automatically */
+.project-container h2 {
+    color: brown;
     margin-top: 40px;
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .insight-list {
@@ -37,13 +47,15 @@ blockquote {
     color: #555;
 }
 
+/* The visual break line */
 .section-divider {
     border: 0;
     height: 1px;
-    background: #eee;
-    margin: 40px 0;
+    background: #ccc;
+    margin: 50px 0;
 }
 
+/* --- Takeaway Cards --- */
 .takeaway-card {
     background-color: #fcfcfc;
     border-left: 4px solid brown;
@@ -58,78 +70,70 @@ blockquote {
     font-size: 1.2rem;
 }
 
-/* Container for the whole section to keep it centered */
-.dashboard-preview-section {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-/* The link itself - removing default underline styles */
+/* --- Dashboard Window --- */
 .dashboard-window-link {
     display: block;
     text-decoration: none;
     margin-top: 20px;
 }
 
-/* The "Window" frame */
 .dashboard-window {
-    position: relative; /* Needed for the overlay positioning */
+    position: relative; 
     width: 100%;
-    border: 4px solid brown; /* Matching your theme */
-    border-radius: 8px; /* Slightly rounded corners look modern */
-    overflow: hidden; /* Ensures image doesn't bleed past rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border: 4px solid brown; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* The screenshot image */
 .dashboard-image {
     width: 100%;
     height: auto;
-    display: block; /* Removes slight gap at bottom of images */
+    display: block; 
     transition: transform 0.3s ease;
 }
 
-/* The dark overlay that appears on hover */
 .window-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.6); 
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Hidden by default */
+    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
-/* The text inside the overlay */
 .overlay-text {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 2px solid white;
     padding: 10px 20px;
 }
 
-/* --- HOVER EFFECTS --- */
-
-/* When hovering the link, show the overlay */
-.dashboard-window-link:hover .window-overlay {
-    opacity: 1;
-}
-
-/* When hovering, slightly zoom the image behind the overlay */
-.dashboard-window-link:hover .dashboard-image {
-    transform: scale(1.05);
-}
-
-/* When hovering, slightly lift the whole window */
+/* Hover Effects */
+.dashboard-window-link:hover .window-overlay { opacity: 1; }
+.dashboard-window-link:hover .dashboard-image { transform: scale(1.05); }
 .dashboard-window-link:hover .dashboard-window {
      transform: translateY(-5px);
-     border-color: #a52a2a; /* Lighter brown on hover */
+     border-color: #a52a2a; 
+}
+
+/* --- Footer & Buttons --- */
+.project-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.code-links {
+    text-align: center;
+    margin-top: 40px;
 }
