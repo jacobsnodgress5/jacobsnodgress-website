@@ -1,88 +1,463 @@
 <!DOCTYPE html>
-
-<html lang ="en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <link rel="stylesheet" href="jacob_style.css">
-    <title>Jacob Snodgress</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Snodgress | Math & Data Science Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Jacob Snodgress, an Applied Mathematics and Data Science student at UCLA. Explore data-driven atmospheric research, machine learning projects, and scientific computing skills.">
+  <meta name="keywords" content="Jacob Snodgress, UCLA, Applied Mathematics, Data Science, HAPI, Neural Network, Atmospheric Science, pyarts, Python, C++, Portfolio">
+  <meta name="author" content="Jacob Snodgress">
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Jacob Snodgress | UCLA Math & Data Science Portfolio">
+  <meta property="og:description" content="UCLA Applied Mathematics & Data Science student specializing in atmospheric modeling, regression, and optimization.">
+  <meta property="og:image" content="images/headshot.png">
+  <meta property="og:type" content="website">
+
+  <!-- Link to Shared CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Defer JS load for better performance -->
+  <script src="script.js" defer></script>
 </head>
+<body>
 
-<!--the idea is to create a catchy really good looking brief home page, then more details one other pages-->
-
-<body> 
-    <header class ="title">  
-        <h1 id = "fullname">Jacob Snodgress</h1>
-        <h3 id = "shortdetail">Math and Data Science Student</h3>
-        <img src="images/headshot_2024-02-25 211344.png" id = "headshot" class = "leftmargin" alt="Jacob Snodgress" width="500">
-        <br>
-    </header>
-   
-    <main>
-        <section id = "navbar">
-            <p class = "cushion"> Home&nbsp;&nbsp;&nbsp;About Me&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;Projects</p>
-        </section>
-
-        <section class ="box1"> 
-            <h2 id = "pushdown1">Hi, I'm Jacob Snodgress</h2>
-            <p id = "pushdown2">I am a UCLA Applied Mathematics and Data Science Engineering student. I have strong programming skills and experience in data-driven research. Proficient in Python, C++, Javascript, PHP and more. I possess research experience applying math and computing skills to atmospheric modeling. Eager to apply analytical and computational expertise to real-world challenges.</p>
-        </section>
-        <br>
-        <section>
-            <div id = "upperleft">
-                <p></p>
-             </div>
-        </section>
-        <br>
-
-        <section class="box3">
-            <h2>Skills</h2>
-            <ul id = "skills">
-                <li><p><b>Programming Languages:</b> Python, C++, Javascript, PHP, SQL/SQLite</p></li>
-                <li><p><b>Data Analysis:</b> NumPy, Pandas, Matplotlib, PyTorch, TensorFlow, Scikit-learn</p></li>
-                <li><p><b>Optimization:</b>Gradient Descent, Lagrange multipliers and KKT Conditions, Constrained and Convex Optimization</p></li>
-
-                <li><p></p><b>Numerical Methods:</b>Least Squares and Curve Fitting, Linear Regression, Polynomial and Spline Interpolation, Runge-Kutta methods, Taylor Series Approximations</p></li>
-
-                <li><p></p><b>Tools:</b> HAPI (HITRAN Application Programming Interface), ARTS/pyarts (Atmospheric Radiative Transfer Simulator)</p></li>
-            </ul>
-        </section>
-
-        <br>
-   
-        <section class ="box2">
-            <h2>Education (September 2022 -Present)</h2>
-            <p>B.S., Applied Mathematics    University of California, Los Angeles</p>
-            <p>Minor in Data Science Engineering | Specialization in Computing</p>
-            <p>Current GPA: 3.70</p>
-        </section>
-
-        <br>
-
-        <section class = "box4">
-            <h2>Work Experience</h2>
-            <p>Research Assistant, Atmospheric Sciences Department, UCLA</p>
-            <p>September 2024 - Present Principal Investigator:  Jonathan Mitchell, Ph.D</p>
-            <ul>
-                <li>Utilized the HITRAN database and its python itnerface HAPI to extract absoprtion spectra.</li>  
-                <li>Conducted data visualization and regression analysis to accurately and quickly predict atmospheric heating rates.</li>
-                <li>Currently running simulations using the ARTS model to simulate Earth like conditions, including heating rates.</li>
-                <li>The long term goal of my research is to do the same for Saturn's moon Titan, and by accurately simulating and analyzing data we can imrpove our understanding of Titan's weather by obtaining its atmospheric heating rates</li>
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#about" class="logo">
+        Jacob Snodgress <span>|| UCLA</span>
+      </a>
       
-            </ul>
-        </section>
+      <!-- Mobile hamburger burger trigger -->
+      <button class="burger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <section class ="contact">
-            <h2>Contact Info</h2>
-            <p>Email: jacobsnodgress5@gmail.com</p>
-            <p>LinkedIn: link <!--<a href="https://www.linkedin.com/in/jac-->
-            <p>GitHub: link2</p>
+      <!-- Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="active">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <!-- External link to Resume Google Doc -->
+        <a href="https://docs.google.com/document/d/1t6d_ZTeahruYWaAqltNu-LVPaHZLhD33WX9d3P49qLA/edit?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+    </div>
+  </header>
 
-        </section>
-    
-    </main>
+  <!-- ==========================================
+       HERO & PROFILE (ABOUT ME) SECTION
+       ========================================== -->
+  <section id="about" class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- PROFILE CARD (LEFT) -->
+      <aside class="profile-card animate-on-scroll">
+        <div class="image-container">
+          <!-- 
+            DEVELOPER NOTE:
+            This is where your headshot image is displayed. 
+            To change this image, place your new image in the 'images/' folder
+            and update the src attribute below. (Current size: 200x200px)
+          -->
+          <img src="images/individual_grad_pic.jpeg" alt="Jacob Snodgress Profile Headshot" class="headshot">
+        </div>
+        <h1 class="profile-name">Jacob Snodgress</h1>
+        <p class="profile-tag">Applied Math & Data Science</p>
+        
+        <div class="divider"></div>
+        
+        <!-- Socials grid using copied png icons -->
+        <div class="socials-grid">
+          <a href="https://github.com/jacobsnodgress5/" class="social-btn" target="_blank" rel="noopener" title="GitHub Profile">
+            <!-- Replacing with simple inline SVG for high resolution light theme -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jacob-snodgress-2a7b9b293/" class="social-btn" target="_blank" rel="noopener" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/jacobsnodgress/" class="social-btn" target="_blank" rel="noopener" title="Instagram Profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/jacob.snodgress.3" class="social-btn" target="_blank" rel="noopener" title="Facebook Profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+            </svg>
+          </a>
+        </div>
+      </aside>
 
-    <footer>
-        <p id = "footer">&copy; Jacob Snodgress 2025</p>
-    </footer>
+      <!-- HERO CONTENT AREA (RIGHT) -->
+      <article class="hero-content">
+        <h2 class="greeting animate-on-scroll">Welcome to my space</h2>
+      
+        <div class="hero-description animate-on-scroll delay-100">
+          <p>
+            I am a <strong>University of California, Los Angeles (UCLA)</strong> graduate with a <strong>B.S. in Applied Mathematics</strong> with a <strong>Data Science Engineering minor</strong> and a <strong>Specialization in Computing</strong>.
+          </p>
+          <br>
+          <p>
+            My expertise is at the intersection of mathematics and programming, seeking to solve complex,
+            data-driven problems that make a positive difference in the world.
+            I possess strong experience in research environments, applying computational
+            analysis and optimization to academic research settings. Additionally, I pride myself on being an independent learner, always seeking to learn and understood more of the continuingly evolving landscape of data science, machine learning, and scientific computing.
+          </p>
+        </div>
+
+        <div class="highlight-box animate-on-scroll delay-200">
+          <p>
+            "My passion lies in bridging rigorous mathematics and statisical methods with scalable, analytical software to unlock insights about the world."
+          </p>
+        </div>
+
+        <div class="cta-group animate-on-scroll delay-300">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS GRID SECTION
+       ========================================== -->
+  <section id="projects" class="bg-secondary">
+    <div class="container">
+      <h2 class="title-medium animate-on-scroll">Showcase Projects</h2>
+      <p class="subtitle animate-on-scroll">
+        A selection of data science, numerical modeling, and software engineering projects.
+      </p>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: UFA Advanced Statistics Dashboard -->
+        <article class="project-card animate-on-scroll">
+          <!-- 
+            DEVELOPER NOTE:
+            This card links to your live UFA statistics app and displays images/ufa_dashboard.png.
+            To change the preview image, replace 'images/ufa_dashboard.png' with your own screenshot.
+          -->
+          <img src="images/UFA-dashboard.png" alt="UFA Statistics Dashboard Preview" class="project-image">
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-accent">Next.js / React</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Python</span>
+              <span class="tag">Tableau</span>
+            </div>
+            <!-- EDIT HERE: Project Title -->
+            <h3 class="project-title">UFA Advanced Statistics Dashboard</h3>
+            <!-- EDIT HERE: Project Description -->
+            <p class="project-desc">
+              Interactive analytics showcase for the Ultimate Frisbee Association (UFA), featuring player Expected Contributions (aEC), Completion Percentage Over Expected (CPOE), and spatial expected goals (xG) field heatmaps.
+            </p>
+            <div class="project-links">
+              <!-- EDIT HERE: Project Link -->
+              <a href="https://ufa-data-analysis-website.vercel.app/" class="project-link" target="_blank" rel="noopener">
+                View Website ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: HAPI Neural Network -->
+        <article class="project-card animate-on-scroll delay-100">
+          <!-- 
+            DEVELOPER NOTE:
+            This card links to your HAPI Neural Network notebook and displays images/NN.png.
+            To change the preview image, replace 'images/NN.png'.
+          -->
+          <img src="images/NN.png" alt="Neural Network Graph Preview" class="project-image">
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-accent">Data Science</span>
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">HITRAN/HAPI</span>
+            </div>
+            <!-- EDIT HERE: Project Title -->
+            <h3 class="project-title">HAPI Neural Network</h3>
+            <!-- EDIT HERE: Project Description -->
+            <p class="project-desc">
+              Developed a custom neural network model to extract absorption spectra from the HITRAN database. Conducted regression analysis and visualization scripts to accurately and rapidly predict atmospheric heating rates.
+            </p>
+            <div class="project-links">
+              <!-- EDIT HERE: Project Link -->
+              <a href="https://github.com/jacobsnodgress5/Neural-Network-HAPI-Project/blob/main/Neural-Network-HAPI%20(4).ipynb" class="project-link" target="_blank" rel="noopener">
+                View Code ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Titan Climate Simulator -->
+        <article class="project-card animate-on-scroll delay-200">
+          <div class="project-image" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" width="50" height="50" fill="var(--ucla-blue)" style="opacity: 0.35;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-accent">Atmospheric Modeling</span>
+              <span class="tag">Research</span>
+              <span class="tag">Python</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+            <!-- EDIT HERE: Project Title -->
+            <h3 class="project-title">Coming Soon: Published Research Paper on the Spatiotemporal Affect of QSARs on extreme precipitation. </h3>
+            <!-- EDIT HERE: Project Description -->
+            <p class="project-desc">
+              As a lead author on this paper I performed all the neccesary data pipelining, analysis, and visualization to produce the final results. This paper os currently under review and will be published in the near future. Please check back soon for a link to the final publication. 
+            </p>
+            <div class="project-links">
+              <!-- EDIT HERE: Project Link -->
+              <a href="https://github.com/jacobsnodgress5/" class="project-link" target="_blank" rel="noopener">
+                View Repository ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TIMELINE SECTION (EXPERIENCE & EDUCATION)
+       ========================================== -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="title-medium animate-on-scroll">Experience & Education</h2>
+      <p class="subtitle animate-on-scroll">
+        My academic foundations and hands-on scientific research milestones.
+      </p>
+
+      <div class="timeline-container">
+        
+        <!-- EDUCATION COLUMN (LEFT) -->
+        <div class="animate-on-scroll">
+          <h3 class="timeline-column-title">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.49 11.27l6.51 3.55 6.51-3.55L12 14.82l-6.51-3.55zM12 16L4 11.64v4.73l8 4.36 8-4.36v-4.73l-8 4.36z"/>
+            </svg>
+            Education
+          </h3>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-header">
+                <span class="timeline-date">2022 - Present</span>
+                <h4 class="timeline-title">B.S. in Applied Mathematics</h4>
+                <p class="timeline-subtitle">University of California, Los Angeles (UCLA)</p>
+              </div>
+              <div class="timeline-content">
+                <p>GPA: <strong>3.64</strong></p>
+                <p>Minor in Data Science Engineering || Specialization in Computing</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXPERIENCE COLUMN (RIGHT) -->
+        <div class="animate-on-scroll delay-100">
+          <h3 class="timeline-column-title">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+            </svg>
+            Research Experience
+          </h3>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-header">
+                <span class="timeline-date">Sep 2024 - Present</span>
+                <h4 class="timeline-title">Research Assistant</h4>
+                <p class="timeline-subtitle">UCLA Atmospheric Sciences Department</p>
+              </div>
+              <div class="timeline-content">
+                <p>Principal Investigator: Jonathan Mitchell, Ph.D.</p>
+                <ul>
+                  <li>Utilized the HITRAN spectroscopic database and the HAPI python interface to extract chemical absorption spectra.</li>
+                  <li>Conducted data visualization pipelines and regression analysis to rapidly predict atmospheric heating rates.</li>
+                  <li>Coded atmospheric simulations using the Atmospheric Radiative Transfer Simulator (ARTS/pyarts) to model Earth-like conditions.</li>
+                  <li>Working toward the long-term goal of running comparative simulations for Saturn's moon Titan to model climate and weather profiles.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SKILLS BADGES SECTION
+       ========================================== -->
+  <section id="skills" class="bg-secondary">
+    <div class="container">
+      <h2 class="title-medium animate-on-scroll">Skills & Expertise</h2>
+      <p class="subtitle animate-on-scroll">
+        My technical proficiencies categorized by programming, math theory, and analysis tools.
+      </p>
+
+      <div class="skills-grid">
+        
+        <!-- CATEGORY 1 -->
+        <div class="skills-category animate-on-scroll">
+          <h3 class="category-title">Programming</h3>
+          <div class="skills-list">
+            <div class="skill-badge">Python <span class="skill-icon">&lt;/&gt;</span></div>
+            <div class="skill-badge">R <span class="skill-icon">&lt;/&gt;</span></div>
+            <div class="skill-badge">C++ <span class="skill-icon">&lt;/&gt;</span></div>
+            <div class="skill-badge">JavaScript <span class="skill-icon">&lt;/&gt;</span></div>
+            <div class="skill-badge">PHP <span class="skill-icon">&lt;/&gt;</span></div>
+            <div class="skill-badge">SQL / SQLite <span class="skill-icon">db</span></div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2 -->
+        <div class="skills-category animate-on-scroll delay-100">
+          <h3 class="category-title">Data Analysis</h3>
+          <div class="skills-list">
+            <div class="skill-badge">NumPy <span class="skill-icon">math</span></div>
+            <div class="skill-badge">Pandas <span class="skill-icon">data</span></div>
+            <div class="skill-badge">Matplotlib <span class="skill-icon">plot</span></div>
+            <div class="skill-badge">PyTorch <span class="skill-icon">ml</span></div>
+            <div class="skill-badge">TensorFlow <span class="skill-icon">ml</span></div>
+            <div class="skill-badge">Scikit-learn <span class="skill-icon">ml</span></div>
+            <div class="skill-badge">Sci-Py <span class="skill-icon">ml</span></div>
+            <div class="skill-badge">Transformers <span class="skill-icon">ml</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category animate-on-scroll delay-200">
+          <h3 class="category-title">Math & Optimization</h3>
+            <div class="skills-list">
+            <div class="skill-badge">Convex Optimization <span class="skill-icon">opt</span></div>
+            <div class="skill-badge">Lagrange Multipliers <span class="skill-icon">opt</span></div>
+            <div class="skill-badge">Gradient Descent <span class="skill-icon">opt</span></div>
+            <div class="skill-badge">Game Theory / Shapley <span class="skill-icon">math</span></div>
+            <div class="skill-badge">Statistical Inference <span class="skill-icon">stats</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category animate-on-scroll delay-300">
+          <h3 class="category-title">Infrastructure & Tools</h3>
+            <div class="skills-list">
+            <div class="skill-badge">Git / GitHub <span class="skill-icon">dev</span></div>
+            <div class="skill-badge">Docker <span class="skill-icon">dev</span></div>
+            <div class="skill-badge">Linux <span class="skill-icon">dev</span></div>
+            <div class="skill-badge">Tableau / Power BI <span class="skill-icon">pres</span></div>
+            <div class="skill-badge">Ollama / Vector DBs <span class="skill-icon">ai</span></div>
+            <div class="skill-badge">HITRAN / pyarts <span class="skill-icon">sci</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION
+       ========================================== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="title-medium animate-on-scroll">Get in Touch</h2>
+      <p class="subtitle animate-on-scroll">
+        Have a question or want to collaborate? Send a message or reach out through my social channels.
+      </p>
+
+      <div class="contact-grid">
+        
+        <!-- CONTACT INFORMATION CARD (LEFT) -->
+        <div class="contact-card animate-on-scroll">
+          
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <div>
+              <p class="info-label">Email</p>
+              <p class="info-value"><a href="mailto:jacobsnodgress5@gmail.com">jacobsnodgress5@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <div>
+              <p class="info-label">LinkedIn</p>
+              <p class="info-value"><a href="https://www.linkedin.com/in/jacob-snodgress-2a7b9b293/" target="_blank" rel="noopener">jacob-snodgress-2a7b9b293 ↗</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <div>
+              <p class="info-label">GitHub</p>
+              <p class="info-value"><a href="https://github.com/jacobsnodgress5/" target="_blank" rel="noopener">jacobsnodgress5 ↗</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CONTACT INTERACTIVE FORM (RIGHT) -->
+        <form class="contact-form animate-on-scroll delay-100">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Full Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email Address</label>
+            <input type="email" id="form-email" class="form-input" placeholder="name@domain.com" required>
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" class="form-input" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">&copy; 2026 Jacob Snodgress. All rights reserved.</p>
+      <p class="footer-text" style="font-size: 0.75rem;">UCLA B.S. Applied Mathematics &bull; Minor in Data Science Engineering</p>
+    </div>
+  </footer>
+
 </body>
 </html>
